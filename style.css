@@ -19,6 +19,11 @@
     padding: 0 clamp(10px, 10vw, 165px);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .nav__list{
     display: flex;
     list-style: none;
