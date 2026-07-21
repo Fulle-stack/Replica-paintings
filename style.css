@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #E1EDE6;
+    padding: 32px 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 clamp(10px, 10vw, 165px);
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    
+}
+
+.link__nav{
+    text-decoration: none;
+    color: #2C2D35;
+}
+
+.shopping__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    
+}
+
+.shopping__cart:hover {
+    transform: scale(1.1);
+}
+
+.block__right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
