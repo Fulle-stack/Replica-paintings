@@ -14,21 +14,49 @@
             <a href="#" class="logo">
                 <img src="img-poster/Frame 85.svg" alt="logo">
             </a>
+
             <div class="block__right">
-                <nav class="nav">
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+
+                <nav class="nav" id="menu">
                     <ul class="nav__list">
                         <li><a class="link__nav" href="#">Репродукции</a></li>
                         <li><a class="link__nav" href="#">Новинки</a></li>
                         <li><a class="link__nav" href="#">О нас</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="shopping__cart">
+                <a href="#" class="shopping__cart" id="cart">
                     <img src="img-poster/cart.svg" alt="shopping cart">
                 </a>
             </div>
-            
         </div>
     </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__image">
+                    <img src="img-poster/Layer 0 1.png" alt="bird">
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__line">Реплики картин</span>
+                        <span class="hero__line">от <span class="highlight">Ink. House</span></span>
+                    </h1>
+                    <p class="hero__description">
+                        Высокое качество отрисовки на плотной бумаге или льняном<br>холсте. Редкие произведения,
+                        доступные цены.
+                    </p>
+                    <a href="#" class="hero__btn">Продукция</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="burger.js"></script>
 </body>
 
 </html>
