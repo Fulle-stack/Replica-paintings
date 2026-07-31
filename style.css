@@ -348,9 +348,7 @@
     }
 
     .country__block {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card__image {
