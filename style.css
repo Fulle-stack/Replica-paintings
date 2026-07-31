@@ -130,6 +130,11 @@
     z-index: 10;
 }
 
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
 .burger__line {
     display: block;
     width: 100%;
@@ -189,6 +194,7 @@
 
 .catalog__grid {
     display: block;
+    margin-bottom: 70px;
 }
 
 .country__block {
@@ -196,6 +202,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     
+
 }
 
 .card {
@@ -247,6 +254,18 @@
     border: 1px solid rgba(89, 141, 102, 1);
     text-align: center;
     transition: all 0.3s ease;
+}
+
+.card__btn:hover {
+    background: rgba(55, 107, 68, 1);
+    color: rgba(244, 246, 245, 1);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .country__block {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -326,6 +345,18 @@
         padding: 30px 20px;
         display: none;
         z-index: 50;
+    }
+
+    .country__block {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card__image {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .nav.active {

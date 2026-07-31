@@ -8,4 +8,6 @@ burger.addEventListener('click', function () {
     menu.classList.toggle('active');
     cart.classList.toggle('hidden');
 
+    document.body.classList.toggle('no-scroll')
+
 });
