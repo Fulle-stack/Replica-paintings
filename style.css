@@ -290,7 +290,6 @@
     position: relative;
     z-index: 1;
     display: flex;
-    min-height: 574px;
     height: 100%;
     padding-top: clamp(30px, 10vw, 70px);
     padding-left: 165px;
@@ -340,12 +339,14 @@
 }
 
 .banner__btn {
+    display: inline-block;
     text-decoration: none;
     font-size: 20px;
     color: rgba(44, 45, 53, 1);
     line-height: 1.0;
     padding: 21px 60px;
     background: rgba(238, 219, 109, 1);
+    transition: all 0.3s ease;
 }
 
 .banner__btn:hover {
@@ -354,6 +355,7 @@
 
 .banner__btn:active {
     background: rgb(240, 208, 95);
+    transform: scale(0.98);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -520,6 +522,31 @@
     .nav__list {
         flex-direction: column;
         gap: 25px;
+    }
+
+    .banner__container {
+       padding: 70px 37px 70px 39px;
+    }
+
+    .banner__star {
+        width: 60px;
+    }
+    
+    .banner__title {
+        margin-bottom: 30px;
+    }
+
+    .banner__line {
+        font-size: 30px;
+    }
+
+    .banner__desc {
+       max-width: 100%;
+        font-size: 18px;
+    }
+    
+    .banner__desc--bottom-large {
+        margin-bottom: 30px;
     }
 
     .burger.active .burger__line:nth-child(1) {
